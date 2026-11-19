@@ -135,3 +135,67 @@ nav {
     line-height: 1.5;
     margin-top: 25px;
 }
+
+
+/* ===== PORTADA PRINCIPAL ===== */
+
+/* ===== PORTADA PRINCIPAL ===== */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 35px;
+    padding: 40px;
+}
+
+.hero-texto {
+    max-width: 520px;
+}
+
+.subtitulo {
+    color: var(--cafe-beige);
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+/* ===== TÍTULO PRINCIPAL ===== */
+
+.hero-texto h2 {
+    color: var(--blanco-crema);
+    font-family: 'Jersey 25', sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.2;
+    margin-top: 35px;
+}
+
+/* ===== DESCRIPCIÓN PRINCIPAL ===== */
+
+.hero-texto p {
+    color: var(--blanco-crema);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-top: 25px;
+}
+
+
+/* ===== IMAGEN DE LA PORTADA ===== */
+
+.hero-imagen {
+    border: 1px dashed var(--cafe-beige);
+    border-radius: 12px;
+    padding: 8px;
+    min-width: 0;
+}
+
+.hero-imagen img {
+    width: 100%;
+    aspect-ratio: 5 / 4;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
