@@ -153,6 +153,12 @@ nav {
     max-width: 520px;
 }
 
+
+
+
+
+
+
 .subtitulo {
     color: var(--cafe-beige);
     font-family: Arial, sans-serif;
@@ -198,4 +204,45 @@ nav {
     object-fit: cover;
     border-radius: 10px;
     display: block;
+}
+
+
+/* ===== BOTÓN EXPLORAR COLECCIÓN ===== */
+
+.hero-boton {
+    position: relative;
+    width: 300px;
+    margin-top: 90px;
+}
+
+/* Imagen del botón */
+
+.boton-coleccion {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Pollito encima del botón */
+
+.pollito {
+    position: absolute;
+    width: 150px;
+    height: auto;
+
+    bottom: 75%;
+    left: 25px;
+
+    z-index: 2;
+}
+
+/* Efecto al pasar el mouse */
+
+.hero-boton a {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.hero-boton a:hover {
+    transform: scale(1.03);
 }
