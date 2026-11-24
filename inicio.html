@@ -7,100 +7,233 @@
 
     <title>PLUSH.CLAUSS</title>
 
-    <!-- Tipografía del logo -->
+    <!-- Tipografía -->
     <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
 
-    <!-- Conexión con CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- ===== ENCABEZADO ===== -->
-    <header>
+    <!-- ========== HEADER ========== -->
 
-        <h1>PLUSH.CLAUSS</h1>
+    <header class="header">
 
-        <nav>
-            <a href="#inicio">INICIO</a>
-            <a href="#games">GAMES</a>
-            <a href="#series">SERIES</a>
-            <a href="#contacto">CONTACTO</a>
+        <!-- Logo -->
+        <h1 class="header__logo">
+            PLUSH.CLAUSS
+        </h1>
+
+        <!-- Menú -->
+        <nav class="header__menu">
+
+            <a href="#inicio" class="header__enlace">INICIO</a>
+            <a href="#games" class="header__enlace">GAMES</a>
+            <a href="#series" class="header__enlace">SERIES</a>
+            <a href="#contacto" class="header__enlace">CONTACTO</a>
+
         </nav>
 
+        <!-- Perfil -->
+        <a href="#perfil" class="header__perfil" aria-label="Mi perfil">
 
-        <!-- Ícono de perfil -->
-<a href="#perfil" class="perfil" aria-label="Mi perfil">
-    <svg viewBox="0 0 48 48" fill="none">
-        <circle cx="24" cy="24" r="21" stroke="black" stroke-width="2"/>
-        <circle cx="24" cy="18" r="7" stroke="black" stroke-width="2"/>
-        <path d="M10 38 C10 26 38 26 38 38"
-              stroke="black"
-              stroke-width="2"/>
-    </svg>
-</a>
+            <svg class="header__icono" viewBox="0 0 48 48" fill="none">
 
+                <circle cx="24" cy="24" r="21"
+                        stroke="black" stroke-width="2"/>
 
+                <circle cx="24" cy="18" r="7"
+                        stroke="black" stroke-width="2"/>
+
+                <path d="M10 38 C10 26 38 26 38 38"
+                      stroke="black" stroke-width="2"/>
+
+            </svg>
+
+        </a>
 
     </header>
 
-    <!-- ===== CONTENIDO PRINCIPAL ===== -->
-    <main id="inicio">
 
-    <!-- ===== PORTADA PRINCIPAL ===== -->
-    <section class="hero">
+    <!-- ========== MAIN ========== -->
 
-        <div class="hero-texto">
+    <main class="main" id="inicio">
 
-            <span class="subtitulo">
-                UNIVERSO PLUSH.CLAUSS
-            </span>
+        <!-- Portada -->
+        <section class="main__portada">
 
-            <h2>
-                TUS PERSONAJES FAVORITOS,<br>
-                AHORA PARA ABRAZAR
-            </h2>
+            <!-- Contenido izquierdo -->
+            <div class="main__texto">
 
-            <p>
-                Descubre peluches coleccionables de alta calidad
-                inspirados en los universos que más te apasionan.
-            </p>
+                <!-- Subtítulo -->
+                <span class="main__subtitulo">
+                    UNIVERSO PLUSH.CLAUSS
+                </span>
 
-           
+                <!-- Título principal -->
+                <h2 class="main__titulo">
+                    TUS PERSONAJES FAVORITOS,<br>
+                    AHORA PARA ABRAZAR
+                </h2>
+
+                <!-- Descripción -->
+                <p class="main__descripcion">
+                    Descubre peluches coleccionables de alta calidad
+                    inspirados en los universos que más te apasionan.
+                </p>
+
+                <!-- Botón explorar colección -->
+                <!-- ===== BOTÓN Y BUSCADOR ===== -->
+
+<div class="main__acciones">
+
+    <!-- Botón con pollito -->
+    <div class="main__boton">
+
+        <img src="img/2daIMG.png"
+             alt="Mascota de PLUSH.CLAUSS"
+             class="main__pollito">
+
+        <a href="#coleccion" class="main__boton-enlace">
+
+            <img src="img/3raIMG.png"
+                 alt="Explorar colección"
+                 class="main__boton-imagen">
+
+        </a>
+
+    </div>
+
+    <!-- ===== FRASE DE LA PORTADA ===== -->
 
 
 
-<div class="hero-boton">
+    <!-- Buscador -->
+    <div class="main__buscador">
 
-    <img src="img/2daIMG.png"
-         alt="Mascota de PLUSH.CLAUSS"
-         class="pollito">
+        <img src="img/4taIMG.png"
+             alt="Buscar peluches"
+             class="main__buscador-imagen">
 
-    <a href="#coleccion">
-        <img src="img/3raIMG.png"
-             alt="Explorar colección"
-             class="boton-coleccion">
-    </a>
+    </div>
 
 </div>
+
+
+<p class="main__frase">
+    Solo un poquito de nostalgia<br>
+    que te anime.
+</p>
+
+
+            </div>
+
+            <!-- Contenido derecho -->
+            <!-- ===== IMAGEN PRINCIPAL ===== -->
+
+<div class="main__visual">
+
+    <div class="main__imagen">
+
+        <img src="img/1eraIMG.png"
+             alt="Peluches de PLUSH.CLAUSS"
+             class="main__foto">
+
+    </div>
+
+    <p class="main__pie-imagen">
+        Tus mundos favoritos, un poco más cerca.
+    </p>
+
+</div>
+
+        </section>
+
+
+        <!-- ===== SECCIÓN DE UNIVERSOS ===== -->
+
+<section class="main__universos" id="coleccion">
+
+    <p class="main__universos-subtitulo">
+        CADA FANDOM TIENE SU LUGAR
+    </p>
+
+    <h2 class="main__universos-titulo">
+        EXPLORA TUS UNIVERSOS
+    </h2>
+    <!-- ===== TARJETAS DE CATEGORÍAS ===== -->
+
+<div class="main__categorias">
+
+    <!-- Videojuegos -->
+    <div class="main__categoria">
+
+        <img src="img/videojuegos.png"
+             alt="Peluches de videojuegos"
+             class="main__categoria-imagen">
+
+        <div class="main__categoria-texto">
+
+            <h3>VIDEOJUEGOS</h3>
+
+            <p>Del siguiente nivel a tu estantería.</p>
+
+            <a href="#games">EXPLORAR</a>
 
         </div>
 
-        <!-- ===== IMAGEN PRINCIPAL ===== -->
+    </div>
 
-<div class="hero-imagen">
+    <!-- Series -->
+    <div class="main__categoria">
 
-    <img src="img/1eraIMG.png"
-         alt="1 imagen de portada de la página web">
+        <img src="img/series.png"
+             alt="Peluches de series"
+             class="main__categoria-imagen">
+
+        <div class="main__categoria-texto">
+
+            <h3>SERIES</h3>
+
+            <p>Historias que se quedan contigo.</p>
+
+            <a href="#series">EXPLORAR</a>
+
+        </div>
+
+    </div>
+
+    <!-- Películas -->
+    <div class="main__categoria">
+
+        <img src="img/peliculas.png"
+             alt="Peluches de películas"
+             class="main__categoria-imagen">
+
+        <div class="main__categoria-texto">
+
+            <h3>PELÍCULAS</h3>
+
+            <p>Un poco de magia fuera de la pantalla.</p>
+
+            <a href="#peliculas">EXPLORAR</a>
+
+        </div>
+
+    </div>
 
 </div>
 
-    </section>
+</section>
 
-</main>
 
-    <!-- ===== PIE DE PÁGINA ===== -->
-    <footer>
+    </main>
+
+
+    <!-- ========== FOOTER ========== -->
+
+    <footer class="footer">
 
         <!-- Aquí agregaremos el contenido del footer -->
 

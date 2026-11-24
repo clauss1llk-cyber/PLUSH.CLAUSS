@@ -1,3 +1,10 @@
+/* ==================================
+   PLUSH.CLAUSS
+================================== */
+
+
+/* ===== COLORES ===== */
+
 :root {
     --azul-oscuro: #233044;
     --cafe-beige: #B69E7C;
@@ -5,6 +12,7 @@
     --gris-claro: #C9C9C9;
     --negro: #000000;
 }
+
 
 /* ===== ESTILOS GENERALES ===== */
 
@@ -14,219 +22,167 @@
     box-sizing: border-box;
 }
 
-/* ===== FONDO PRINCIPAL ===== */
-
 body {
     background-color: var(--azul-oscuro);
     color: var(--blanco-crema);
 }
 
-/* ===== ENCABEZADO ===== */
 
-header {
+/* ==================================
+   HEADER
+================================== */
+
+/* Contenedor principal */
+
+.header {
     background-color: var(--cafe-beige);
     color: var(--negro);
-    padding: 20px 32px;
+
+    padding: 16px 28px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 24px;
 }
 
-/* ===== MENÚ ===== */
 
-nav {
+/* Logo */
+
+.header__logo {
+    font-family: 'Jersey 25', sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    flex-shrink: 0;
+}
+
+
+/* Menú */
+
+.header__menu {
     display: flex;
-    gap: 25px;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;
 }
 
-nav a {
+
+/* Enlaces */
+
+.header__enlace {
     color: var(--negro);
     text-decoration: none;
+
     font-family: Arial, sans-serif;
     font-size: 16px;
     font-weight: bold;
 }
 
-/* ===== LOGO ===== */
 
-header h1 {
-    font-family: 'Jersey 25', sans-serif;
-    font-size: 42px;
-    font-weight: 400;
-    letter-spacing: 1px;
-}
+/* Perfil */
 
-/* ===== ÍCONO DE PERFIL ===== */
-
-nav {
-    margin-left: auto;
-}
-
-.perfil {
+.header__perfil {
     display: flex;
     align-items: center;
-    margin-left: 20px;
-}
-
-.perfil svg {
-    width: 52px;
-    height: 52px;
-}
-
-/* ===== AJUSTES DEL ENCABEZADO ===== */
-
-header {
-    gap: 24px;
-    padding: 16px 28px;
-}
-
-header h1 {
-    font-size: 38px;
-    flex-shrink: 0;
-}
-
-nav {
-    margin-left: auto;
-    gap: 20px;
-}
-
-.perfil {
     margin-left: 0;
     flex-shrink: 0;
 }
 
-/* ===== PORTADA PRINCIPAL ===== */
 
-.hero {
-    padding: 40px;
-}
+/* Ícono */
 
-.hero-texto {
-    max-width: 520px;
-}
-
-/* Texto pequeño superior */
-
-.subtitulo {
-    color: var(--cafe-beige);
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-}
-
-/* Título principal */
-
-.hero-texto h2 {
-    color: var(--blanco-crema);
-    font-family: 'Jersey 25', sans-serif;
-    font-size: 48px;
-    font-weight: 400;
-    text-align: center;
-    margin-top: 35px;
-}
-
-/* Descripción */
-
-.hero-texto p {
-    color: var(--blanco-crema);
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 1.5;
-    margin-top: 25px;
+.header__icono {
+    width: 52px;
+    height: 52px;
 }
 
 
-/* ===== PORTADA PRINCIPAL ===== */
+/* ==================================
+   MAIN
+================================== */
 
-/* ===== PORTADA PRINCIPAL ===== */
+/* Portada */
 
-.hero {
+.main__portada {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: start;
+
     gap: 35px;
     padding: 40px;
 }
 
-.hero-texto {
+
+/* Contenedor de textos */
+
+.main__texto {
     max-width: 520px;
 }
 
 
+/* Subtítulo */
 
-
-
-
-
-.subtitulo {
+.main__subtitulo {
     color: var(--cafe-beige);
+
     font-family: Arial, sans-serif;
     font-size: 12px;
 }
 
-/* ===== TÍTULO PRINCIPAL ===== */
 
-.hero-texto h2 {
+/* Título principal */
+
+.main__titulo {
     color: var(--blanco-crema);
+
     font-family: 'Jersey 25', sans-serif;
     font-size: 34px;
     font-weight: 400;
+
     text-align: center;
     line-height: 1.2;
+
     margin-top: 35px;
 }
 
-/* ===== DESCRIPCIÓN PRINCIPAL ===== */
 
-.hero-texto p {
+/* Descripción */
+
+.main__descripcion {
     color: var(--blanco-crema);
+
     font-family: Arial, sans-serif;
     font-size: 16px;
     font-weight: bold;
+
     line-height: 1.5;
     margin-top: 25px;
 }
 
 
-/* ===== IMAGEN DE LA PORTADA ===== */
-
-.hero-imagen {
-    border: 1px dashed var(--cafe-beige);
-    border-radius: 12px;
-    padding: 8px;
-    min-width: 0;
-}
-
-.hero-imagen img {
-    width: 100%;
-    aspect-ratio: 5 / 4;
-    object-fit: cover;
-    border-radius: 10px;
-    display: block;
-}
-
-
-/* ===== BOTÓN EXPLORAR COLECCIÓN ===== */
-
-.hero-boton {
+.main__boton {
     position: relative;
     width: 300px;
-    margin-top: 90px;
+    margin-top: 0;
+    flex-shrink: 0;
 }
+
 
 /* Imagen del botón */
 
-.boton-coleccion {
+.main__boton-imagen {
     display: block;
     width: 100%;
     height: auto;
 }
 
-/* Pollito encima del botón */
 
-.pollito {
+/* Pollito */
+
+.main__pollito {
     position: absolute;
+
     width: 150px;
     height: auto;
 
@@ -236,13 +192,167 @@ nav {
     z-index: 2;
 }
 
-/* Efecto al pasar el mouse */
 
-.hero-boton a {
+/* Enlace del botón */
+
+.main__boton-enlace {
     display: block;
     transition: transform 0.3s ease;
 }
 
-.hero-boton a:hover {
+
+/* Efecto al pasar el mouse */
+
+.main__boton-enlace:hover {
     transform: scale(1.03);
+}
+
+
+/* ===== IMAGEN PRINCIPAL ===== */
+
+/* Contenedor */
+
+.main__imagen {
+    border: 1px dashed var(--cafe-beige);
+    border-radius: 12px;
+
+    padding: 8px;
+    min-width: 0;
+}
+
+
+/* Imagen */
+
+.main__foto {
+    width: 100%;
+    aspect-ratio: 5 / 4;
+    object-fit: cover;
+
+    border-radius: 10px;
+    display: block;
+}
+
+
+/* ===== ACCIONES DEL MAIN ===== */
+
+.main__acciones {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    margin-top: 90px;
+}
+
+/* ===== BUSCADOR ===== */
+
+.main__buscador {
+    width: 180px;
+    flex-shrink: 0;
+}
+
+.main__buscador-imagen {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ===== FRASE DE LA PORTADA ===== */
+
+/* ===== FRASE DE LA PORTADA ===== */
+
+.main__frase {
+    color: var(--blanco-crema);
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin-top: 25px;
+}
+
+/* ===== TEXTO DEBAJO DE LA IMAGEN ===== */
+
+.main__pie-imagen {
+    color: var(--cafe-beige);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+/* ===== SECCIÓN DE UNIVERSOS ===== */
+
+.main__universos {
+    background-color: var(--gris-claro);
+    color: var(--negro);
+    padding: 40px;
+}
+
+/* Subtítulo */
+
+.main__universos-subtitulo {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* Título */
+
+.main__universos-titulo {
+    font-family: 'Jersey 25', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+
+/* ===== CATEGORÍAS ===== */
+
+.main__categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 35px;
+}
+
+/* Tarjeta */
+
+.main__categoria {
+    background-color: var(--cafe-beige);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Imagen */
+
+.main__categoria-imagen {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Textos */
+
+.main__categoria-texto {
+    padding: 15px;
+}
+
+.main__categoria-texto h3 {
+    font-family: 'Jersey 25', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: var(--azul-oscuro);
+}
+
+.main__categoria-texto p {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.main__categoria-texto a {
+    display: inline-block;
+    color: var(--negro);
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 15px;
 }
