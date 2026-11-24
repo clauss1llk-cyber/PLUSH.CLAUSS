@@ -1,0 +1,504 @@
+
+/* ===== PORTADA ===== */
+
+.main__portada {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+
+    gap: 35px;
+    padding: 40px;
+}
+
+
+/* ===== CONTENEDOR DE TEXTOS ===== */
+
+.main__texto {
+    max-width: 520px;
+}
+
+
+/* ===== SUBTÍTULO ===== */
+
+.main__subtitulo {
+    color: var(--cafe-beige);
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+
+/* ===== TÍTULO PRINCIPAL ===== */
+
+.main__titulo {
+    color: var(--blanco-crema);
+
+    font-family: 'Jersey 25', sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+
+    text-align: center;
+    line-height: 1.2;
+
+    margin-top: 35px;
+}
+
+
+/* ===== DESCRIPCIÓN ===== */
+
+.main__descripcion {
+    color: var(--blanco-crema);
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+
+    line-height: 1.5;
+    margin-top: 25px;
+}
+
+
+/* ===== BOTÓN EXPLORAR ===== */
+
+.main__boton {
+    position: relative;
+    width: 300px;
+    margin-top: 0;
+    flex-shrink: 0;
+}
+
+
+/* ===== IMAGEN DEL BOTÓN ===== */
+
+.main__boton-imagen {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* ===== POLLITO ===== */
+
+.main__pollito {
+    position: absolute;
+
+    width: 150px;
+    height: auto;
+
+    bottom: 75%;
+    left: 25px;
+
+    z-index: 2;
+}
+
+
+/* ===== ENLACE DEL BOTÓN ===== */
+
+.main__boton-enlace {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+
+/* ===== EFECTO DEL BOTÓN ===== */
+
+.main__boton-enlace:hover {
+    transform: scale(1.03);
+}
+
+
+/* ===== IMAGEN PRINCIPAL ===== */
+
+.main__imagen {
+    border: 1px dashed var(--cafe-beige);
+    border-radius: 12px;
+
+    padding: 8px;
+    min-width: 0;
+}
+
+
+/* ===== FOTO ===== */
+
+.main__foto {
+    width: 100%;
+    aspect-ratio: 5 / 4;
+    object-fit: cover;
+
+    border-radius: 10px;
+    display: block;
+}
+
+
+/* ===== BOTÓN Y BUSCADOR ===== */
+
+.main__acciones {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    margin-top: 90px;
+}
+
+
+/* ===== BUSCADOR ===== */
+
+.main__buscador {
+    width: 180px;
+    flex-shrink: 0;
+}
+
+.main__buscador-imagen {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* ===== FRASE DE LA PORTADA ===== */
+
+.main__frase {
+    color: var(--blanco-crema);
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin-top: 25px;
+}
+
+
+/* ===== TEXTO DEBAJO DE LA IMAGEN ===== */
+
+.main__pie-imagen {
+    color: var(--cafe-beige);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+
+/* ==================================
+   SECCIÓN DE UNIVERSOS
+================================== */
+
+
+/* ===== FONDO DE UNIVERSOS ===== */
+
+.main__universos {
+    background-color: var(--gris-claro);
+    color: var(--negro);
+    padding: 40px;
+}
+
+
+/* ===== SUBTÍTULO DE UNIVERSOS ===== */
+
+.main__universos-subtitulo {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+
+/* ===== TÍTULO DE UNIVERSOS ===== */
+
+.main__universos-titulo {
+    font-family: 'Jersey 25', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+
+/* ===== CATEGORÍAS ===== */
+
+.main__categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 35px;
+}
+
+
+/* ===== TARJETAS ===== */
+
+.main__categoria {
+    background-color: var(--cafe-beige);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+/* ===== IMÁGENES DE CATEGORÍAS ===== */
+
+.main__categoria-imagen {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ===== CONTENEDOR DE TEXTOS ===== */
+
+.main__categoria-texto {
+    padding: 15px;
+}
+
+
+/* ===== TÍTULOS DE CATEGORÍAS ===== */
+
+.main__categoria-texto h3 {
+    font-family: 'Jersey 25', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: var(--azul-oscuro);
+}
+
+
+/* ===== DESCRIPCIONES ===== */
+
+.main__categoria-texto p {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+/* ===== ENLACES ===== */
+
+.main__categoria-texto a {
+    display: inline-block;
+    color: var(--negro);
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+/* ===== FRASE INFERIOR DE UNIVERSOS ===== */
+
+.main__universos-pie {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+    color: var(--azul-oscuro);
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+/* Líneas decorativas */
+
+.main__universos-pie::before,
+.main__universos-pie::after {
+    content: "";
+    flex: 1;
+    border-top: 1px dashed var(--cafe-beige);
+}
+
+
+
+/* ==================================
+   PRODUCTOS DESTACADOS
+================================== */
+
+/* Sección principal */
+
+.main__destacados {
+    background-color: var(--azul-oscuro);
+    padding: 40px;
+}
+
+/* Título de la sección */
+
+.main__destacados-titulo {
+    color: var(--blanco-crema);
+    font-family: 'Jersey 25', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
+/* ===== CONTENEDOR DE PRODUCTOS ===== */
+
+.main__productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* ===== TARJETA DE PRODUCTO ===== */
+
+.main__producto {
+    background-color: var(--gris-claro);
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    padding: 0;
+}
+
+
+/* ===== IMAGEN DEL PRODUCTO ===== */
+
+.main__producto-imagen {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+
+/* ===== NOMBRE DEL PRODUCTO ===== */
+
+.main__producto-nombre {
+    color: var(--azul-oscuro);
+    font-family: 'Jersey 25', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+
+    margin-top: 10px;
+    padding: 0 12px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+
+/* ===== PRECIO DEL PRODUCTO ===== */
+
+.main__producto-precio {
+    color: var(--azul-oscuro);
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+/* ===== BOTÓN DEL PRODUCTO ===== */
+
+.main__producto-boton {
+    background-color: var(--cafe-beige);
+    color: var(--negro);
+
+    border: 1px solid var(--azul-oscuro);
+    border-radius: 8px;
+
+    padding: 12px 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+
+/* ===== EFECTO DEL BOTÓN ===== */
+
+.main__producto-boton:hover {
+    background-color: var(--blanco-crema);
+}
+
+
+/* ===== INFORMACIÓN DEL PRODUCTO ===== */
+
+.main__producto-info {
+    color: var(--negro);
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: left;
+    margin: 12px 15px;
+}
+
+
+/* ===== VALORACIÓN DEL PRODUCTO ===== */
+
+.main__producto-valoracion {
+    color: var(--negro);
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+
+.main__precios-info {
+    color: var(--blanco-crema);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 25px;
+}
+
+
+
+/* ===== SECCIÓN DE BENEFICIOS ===== */
+
+.main__beneficios {
+    background-color: var(--gris-claro);
+    color: var(--negro);
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+    padding: 25px 40px;
+}
+
+
+/* ===== CADA BENEFICIO ===== */
+
+.main__beneficio {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* ===== ÍCONO ===== */
+
+.main__beneficio-icono {
+    background-color: white;
+
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+    flex-shrink: 0;
+}
+
+
+/* ===== TÍTULO ===== */
+
+.main__beneficio-texto h3 {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+
+/* ===== DESCRIPCIÓN ===== */
+
+.main__beneficio-texto p {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.4;
+}

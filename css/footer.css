@@ -1,0 +1,58 @@
+/* ==================================
+   FOOTER
+================================== */
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+
+.footer {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco-crema);
+    padding: 40px;
+}
+
+/* ===== CONTENIDO ===== */
+
+.footer__contenido {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ===== MASCOTA ===== */
+
+.footer__mascota {
+    width: 100px;
+    height: auto;
+}
+
+/* ===== INFORMACIÓN ===== */
+
+.footer__informacion {
+    max-width: 300px;
+}
+
+/* ===== TÍTULO ===== */
+
+.footer__titulo {
+    font-family: 'Jersey 25', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+/* ===== DESCRIPCIÓN ===== */
+
+.footer__descripcion {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* ===== UBICACIÓN ===== */
+
+.footer__ubicacion {
+    color: var(--cafe-beige);
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    margin-top: 15px;
+}
