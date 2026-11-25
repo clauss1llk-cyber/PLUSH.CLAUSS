@@ -434,6 +434,8 @@
 }
 
 
+/* ===== INFORMACIÓN DE PRECIOS ===== */
+
 .main__precios-info {
     color: var(--blanco-crema);
     font-family: Arial, sans-serif;
@@ -441,6 +443,7 @@
     text-align: center;
     letter-spacing: 1px;
     margin-top: 25px;
+    width: 100%;
 }
 
 

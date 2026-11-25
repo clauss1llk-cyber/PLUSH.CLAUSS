@@ -1,485 +1,410 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>PLUSH.CLAUSS</title>
 
     <!-- Tipografía -->
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- ========== HEADER ========== -->
 
     <header class="header">
+      <!-- Logo -->
+      <h1 class="header__logo">PLUSH.CLAUSS</h1>
 
-        <!-- Logo -->
-        <h1 class="header__logo">
-            PLUSH.CLAUSS
-        </h1>
+      <!-- Menú -->
+      <nav class="header__menu">
+        <a href="#inicio" class="header__enlace">INICIO</a>
+        <a href="#games" class="header__enlace">GAMES</a>
+        <a href="#series" class="header__enlace">SERIES</a>
+        <a href="#contacto" class="header__enlace">CONTACTO</a>
+      </nav>
 
-        <!-- Menú -->
-        <nav class="header__menu">
+      <!-- Perfil -->
+      <a href="#perfil" class="header__perfil" aria-label="Mi perfil">
+        <svg class="header__icono" viewBox="0 0 48 48" fill="none">
+          <circle cx="24" cy="24" r="21" stroke="black" stroke-width="2" />
 
-            <a href="#inicio" class="header__enlace">INICIO</a>
-            <a href="#games" class="header__enlace">GAMES</a>
-            <a href="#series" class="header__enlace">SERIES</a>
-            <a href="#contacto" class="header__enlace">CONTACTO</a>
+          <circle cx="24" cy="18" r="7" stroke="black" stroke-width="2" />
 
-        </nav>
-
-        <!-- Perfil -->
-        <a href="#perfil" class="header__perfil" aria-label="Mi perfil">
-
-            <svg class="header__icono" viewBox="0 0 48 48" fill="none">
-
-                <circle cx="24" cy="24" r="21"
-                        stroke="black" stroke-width="2"/>
-
-                <circle cx="24" cy="18" r="7"
-                        stroke="black" stroke-width="2"/>
-
-                <path d="M10 38 C10 26 38 26 38 38"
-                      stroke="black" stroke-width="2"/>
-
-            </svg>
-
-        </a>
-
+          <path d="M10 38 C10 26 38 26 38 38" stroke="black" stroke-width="2" />
+        </svg>
+      </a>
     </header>
-
 
     <!-- ========== MAIN ========== -->
 
     <main class="main" id="inicio">
+      <!-- Portada -->
+      <section class="main__portada">
+        <!-- Contenido izquierdo -->
+        <div class="main__texto">
+          <!-- Subtítulo -->
+          <span class="main__subtitulo"> UNIVERSO PLUSH.CLAUSS </span>
 
-        <!-- Portada -->
-        <section class="main__portada">
+          <!-- Título principal -->
+          <h2 class="main__titulo">
+            TUS PERSONAJES FAVORITOS,<br />
+            AHORA PARA ABRAZAR
+          </h2>
 
-            <!-- Contenido izquierdo -->
-            <div class="main__texto">
+          <!-- Descripción -->
+          <p class="main__descripcion">
+            Descubre peluches coleccionables de alta calidad inspirados en los
+            universos que más te apasionan.
+          </p>
 
-                <!-- Subtítulo -->
-                <span class="main__subtitulo">
-                    UNIVERSO PLUSH.CLAUSS
-                </span>
+          <!-- Botón explorar colección -->
+          <!-- ===== BOTÓN Y BUSCADOR ===== -->
 
-                <!-- Título principal -->
-                <h2 class="main__titulo">
-                    TUS PERSONAJES FAVORITOS,<br>
-                    AHORA PARA ABRAZAR
-                </h2>
+          <div class="main__acciones">
+            <!-- Botón con pollito -->
+            <div class="main__boton">
+              <img
+                src="img/2daIMG.png"
+                alt="Mascota de PLUSH.CLAUSS"
+                class="main__pollito"
+              />
 
-                <!-- Descripción -->
-                <p class="main__descripcion">
-                    Descubre peluches coleccionables de alta calidad
-                    inspirados en los universos que más te apasionan.
-                </p>
-
-                <!-- Botón explorar colección -->
-                <!-- ===== BOTÓN Y BUSCADOR ===== -->
-
-<div class="main__acciones">
-
-    <!-- Botón con pollito -->
-    <div class="main__boton">
-
-        <img src="img/2daIMG.png"
-             alt="Mascota de PLUSH.CLAUSS"
-             class="main__pollito">
-
-        <a href="#coleccion" class="main__boton-enlace">
-
-            <img src="img/3raIMG.png"
-                 alt="Explorar colección"
-                 class="main__boton-imagen">
-
-        </a>
-
-    </div>
-
-   
-
-
-
-    <!-- Buscador -->
-    <div class="main__buscador">
-
-        <img src="img/4taIMG.png"
-             alt="Buscar peluches"
-             class="main__buscador-imagen">
-
-    </div>
-
-</div>
-
-
-<p class="main__frase">
-    Solo un poquito de nostalgia<br>
-    que te anime.
-</p>
-
-
+              <a href="#coleccion" class="main__boton-enlace">
+                <img
+                  src="img/3raIMG.png"
+                  alt="Explorar colección"
+                  class="main__boton-imagen"
+                />
+              </a>
             </div>
 
+            <!-- Buscador -->
+            <div class="main__buscador">
+              <img
+                src="img/4taIMG.png"
+                alt="Buscar peluches"
+                class="main__buscador-imagen"
+              />
+            </div>
+          </div>
+
+          <p class="main__frase">
+            Solo un poquito de nostalgia<br />
+            que te anime.
+          </p>
+        </div>
+
+        <div class="main__visual">
+          <div class="main__imagen">
+            <img
+              src="img/1eraIMG.png"
+              alt="Peluches de PLUSH.CLAUSS"
+              class="main__foto"
+            />
+          </div>
+
+          <p class="main__pie-imagen">
+            Tus mundos favoritos, un poco más cerca.
+          </p>
+        </div>
+      </section>
+
+      <!-- ===== SECCIÓN DE UNIVERSOS ===== -->
+
+      <section class="main__universos" id="coleccion">
+        <p class="main__universos-subtitulo">CADA FANDOM TIENE SU LUGAR</p>
+
+        <h2 class="main__universos-titulo">EXPLORA TUS UNIVERSOS</h2>
+        <!-- ===== TARJETAS DE CATEGORÍAS ===== -->
+
+        <div class="main__categorias">
+          <!-- Videojuegos -->
+          <div class="main__categoria">
+            <img
+              src="img/videojuegos.png"
+              alt="Peluches de videojuegos"
+              class="main__categoria-imagen"
+            />
+
+            <div class="main__categoria-texto">
+              <h3>VIDEOJUEGOS</h3>
+
+              <p>Del siguiente nivel a tu estantería.</p>
+
+              <a href="#games">EXPLORAR</a>
+            </div>
+          </div>
+
+          <!-- Series -->
+          <div class="main__categoria">
+            <img
+              src="img/series.png"
+              alt="Peluches de series"
+              class="main__categoria-imagen"
+            />
+
+            <div class="main__categoria-texto">
+              <h3>SERIES</h3>
+
+              <p>Historias que se quedan contigo.</p>
+
+              <a href="#series">EXPLORAR</a>
+            </div>
+          </div>
+
+          <!-- Películas -->
+          <div class="main__categoria">
+            <img
+              src="img/peliculas.png"
+              alt="Peluches de películas"
+              class="main__categoria-imagen"
+            />
+
+            <div class="main__categoria-texto">
+              <h3>PELÍCULAS</h3>
+
+              <p>Un poco de magia fuera de la pantalla.</p>
+
+              <a href="#peliculas">EXPLORAR</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== FRASE INFERIOR ===== -->
+
+        <div class="main__universos-pie">
+          <span>TRES UNIVERSOS. UN MISMO LUGAR.</span>
+        </div>
+      </section>
+
+      <!-- ===== PRODUCTOS DESTACADOS ===== -->
+
+      <section class="main__destacados">
+        <h2 class="main__destacados-titulo">
+          LOS MÁS QUERIDOS ENTRE LOS FANDOMS
+        </h2>
+
+        <!-- ===== TARJETAS DE PRODUCTOS ===== -->
+
+        <!-- ===== PRODUCTOS DESTACADOS ===== -->
+
+        <div class="main__productos">
+          <!-- KIRBY -->
+          <div class="main__producto">
+            <img
+              src="img/kirby.png"
+              alt="Peluche de Kirby"
+              class="main__producto-imagen"
+            />
+
+            <p class="main__producto-info">VIDEOJUEGOS · 25 CM</p>
+
+            <h3 class="main__producto-nombre">Kirby · Dream Land</h3>
+
+            <p class="main__producto-valoracion">★★★★★ 4.9 (18)</p>
+
+            <p class="main__producto-precio">Bs 380</p>
+
+            <button class="main__producto-boton">VER DETALLES</button>
+          </div>
+
+          <!-- TOTORO -->
+          <div class="main__producto">
+            <img
+              src="img/totoro.png"
+              alt="Peluche de Totoro"
+              class="main__producto-imagen"
+            />
+
+            <p class="main__producto-info">PELÍCULAS · 30 CM</p>
+
+            <h3 class="main__producto-nombre">Totoro · Bosque encantado</h3>
+
+            <p class="main__producto-valoracion">★★★★★ 4.9 (14)</p>
+
+            <p class="main__producto-precio">Bs 420</p>
+
+            <button class="main__producto-boton">VER DETALLES</button>
+          </div>
+
+          <!-- PIKACHU -->
+          <div class="main__producto">
+            <img
+              src="img/pikachu.png"
+              alt="Peluche de Pikachu"
+              class="main__producto-imagen"
+            />
+
+            <p class="main__producto-info">VIDEOJUEGOS · 28 CM</p>
+
+            <h3 class="main__producto-nombre">Pikachu · Compañero de viaje</h3>
+
+            <p class="main__producto-valoracion">★★★★★ 4.9 (24)</p>
+
+            <p class="main__producto-precio">Bs 380</p>
+
+            <button class="main__producto-boton">VER DETALLES</button>
+          </div>
+
+          <!-- GROGU -->
+          <div class="main__producto">
+            <img
+              src="img/grogu.png"
+              alt="Peluche de Grogu"
+              class="main__producto-imagen"
+            />
+
+            <p class="main__producto-info">SERIES · 28 CM</p>
+
+            <h3 class="main__producto-nombre">Grogu · Pequeño de la galaxia</h3>
+
+            <p class="main__producto-valoracion">★★★★★ 4.8 (17)</p>
+
+            <p class="main__producto-precio">Bs 480</p>
+
+            <button class="main__producto-boton">VER DETALLES</button>
+          </div>
+          
+        </div>
+      
+        <p class="main__precios-info">
+          Precios en bolivianos (Bs). El costo de envío se calcula según tu
+          ciudad.
+        </p>
+      </section>
       
 
-<div class="main__visual">
-
-    <div class="main__imagen">
-
-        <img src="img/1eraIMG.png"
-             alt="Peluches de PLUSH.CLAUSS"
-             class="main__foto">
-
-    </div>
-
-    <p class="main__pie-imagen">
-        Tus mundos favoritos, un poco más cerca.
-    </p>
-
-</div>
-
-        </section>
-
-
-        <!-- ===== SECCIÓN DE UNIVERSOS ===== -->
-
-<section class="main__universos" id="coleccion">
-
-    <p class="main__universos-subtitulo">
-        CADA FANDOM TIENE SU LUGAR
-    </p>
-
-    <h2 class="main__universos-titulo">
-        EXPLORA TUS UNIVERSOS
-    </h2>
-    <!-- ===== TARJETAS DE CATEGORÍAS ===== -->
-
-<div class="main__categorias">
-
-    <!-- Videojuegos -->
-    <div class="main__categoria">
-
-        <img src="img/videojuegos.png"
-             alt="Peluches de videojuegos"
-             class="main__categoria-imagen">
-
-        <div class="main__categoria-texto">
-
-            <h3>VIDEOJUEGOS</h3>
-
-            <p>Del siguiente nivel a tu estantería.</p>
-
-            <a href="#games">EXPLORAR</a>
-
-        </div>
-
-    </div>
-
-    <!-- Series -->
-    <div class="main__categoria">
-
-        <img src="img/series.png"
-             alt="Peluches de series"
-             class="main__categoria-imagen">
-
-        <div class="main__categoria-texto">
-
-            <h3>SERIES</h3>
-
-            <p>Historias que se quedan contigo.</p>
-
-            <a href="#series">EXPLORAR</a>
-
-        </div>
-
-    </div>
-
-    <!-- Películas -->
-    <div class="main__categoria">
-
-        <img src="img/peliculas.png"
-             alt="Peluches de películas"
-             class="main__categoria-imagen">
-
-        <div class="main__categoria-texto">
-
-            <h3>PELÍCULAS</h3>
-
-            <p>Un poco de magia fuera de la pantalla.</p>
-
-            <a href="#peliculas">EXPLORAR</a>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-<!-- ===== FRASE INFERIOR ===== -->
-
-<div class="main__universos-pie">
-
-    <span>TRES UNIVERSOS. UN MISMO LUGAR.</span>
-
-</div>
-
-
-
-</section>
-
-
-<!-- ===== PRODUCTOS DESTACADOS ===== -->
-
-<section class="main__destacados">
-
-    <h2 class="main__destacados-titulo">
-        LOS MÁS QUERIDOS ENTRE LOS FANDOMS
-    </h2>
-
-    <!-- ===== TARJETAS DE PRODUCTOS ===== -->
-
-<!-- ===== PRODUCTOS DESTACADOS ===== -->
-
-<div class="main__productos">
-
-    <!-- KIRBY -->
-    <div class="main__producto">
-
-        <img src="img/kirby.png"
-             alt="Peluche de Kirby"
-             class="main__producto-imagen">
-
-        <p class="main__producto-info">
-            VIDEOJUEGOS · 25 CM
-        </p>
-
-        <h3 class="main__producto-nombre">
-            Kirby · Dream Land
-        </h3>
-
-        <p class="main__producto-valoracion">
-            ★★★★★ 4.9 (18)
-        </p>
-
-        <p class="main__producto-precio">
-            Bs 380
-        </p>
-
-        <button class="main__producto-boton">
-            VER DETALLES
-        </button>
-
-    </div>
-
-
-    <!-- TOTORO -->
-    <div class="main__producto">
-
-        <img src="img/totoro.png"
-             alt="Peluche de Totoro"
-             class="main__producto-imagen">
-
-        <p class="main__producto-info">
-            PELÍCULAS · 30 CM
-        </p>
-
-        <h3 class="main__producto-nombre">
-            Totoro · Bosque encantado
-        </h3>
-
-        <p class="main__producto-valoracion">
-            ★★★★★ 4.9 (14)
-        </p>
-
-        <p class="main__producto-precio">
-            Bs 420
-        </p>
-
-        <button class="main__producto-boton">
-            VER DETALLES
-        </button>
-
-    </div>
-
-
-    <!-- PIKACHU -->
-    <div class="main__producto">
-
-        <img src="img/pikachu.png"
-             alt="Peluche de Pikachu"
-             class="main__producto-imagen">
-
-        <p class="main__producto-info">
-            VIDEOJUEGOS · 28 CM
-        </p>
-
-        <h3 class="main__producto-nombre">
-            Pikachu · Compañero de viaje
-        </h3>
-
-        <p class="main__producto-valoracion">
-            ★★★★★ 4.9 (24)
-        </p>
-
-        <p class="main__producto-precio">
-            Bs 380
-        </p>
-
-        <button class="main__producto-boton">
-            VER DETALLES
-        </button>
-
-    </div>
-
-
-    <!-- GROGU -->
-    <div class="main__producto">
-
-        <img src="img/grogu.png"
-             alt="Peluche de Grogu"
-             class="main__producto-imagen">
-
-        <p class="main__producto-info">
-            SERIES · 28 CM
-        </p>
-
-        <h3 class="main__producto-nombre">
-            Grogu · Pequeño de la galaxia
-        </h3>
-
-        <p class="main__producto-valoracion">
-            ★★★★★ 4.8 (17)
-        </p>
-
-        <p class="main__producto-precio">
-            Bs 480
-        </p>
-
-        <button class="main__producto-boton">
-            VER DETALLES
-        </button>
-
-    </div>
-
-
-    <!-- ===== INFORMACIÓN DE PRECIOS ===== -->
-
-<p class="main__precios-info">
-    Precios en bolivianos (Bs). El costo de envío se calcula según tu ciudad.
-</p>
-
-</div>
-
-
-</section>
-
-
-<!-- ===== SECCIÓN DE BENEFICIOS ===== -->
-
-<section class="main__beneficios">
-
-    <!-- Calidad premium -->
-    <div class="main__beneficio">
-
-        <span class="main__beneficio-icono">◇</span>
-
-        <div class="main__beneficio-texto">
-
+      <section class="main__beneficios">
+        <!-- Calidad premium -->
+        <div class="main__beneficio">
+          <span class="main__beneficio-icono">◇</span>
+
+          <div class="main__beneficio-texto">
             <h3>Calidad premium</h3>
 
-            <p>
-                Texturas suaves y detalles que hacen la diferencia.
-            </p>
-
+            <p>Texturas suaves y detalles que hacen la diferencia.</p>
+          </div>
         </div>
 
-    </div>
+        <!-- Diseños coleccionables -->
+        <div class="main__beneficio">
+          <span class="main__beneficio-icono">✧</span>
 
-    <!-- Diseños coleccionables -->
-    <div class="main__beneficio">
-
-        <span class="main__beneficio-icono">✧</span>
-
-        <div class="main__beneficio-texto">
-
+          <div class="main__beneficio-texto">
             <h3>Diseños coleccionables</h3>
 
-            <p>
-                Personajes para darle un lugar especial a tu fandom.
-            </p>
-
+            <p>Personajes para darle un lugar especial a tu fandom.</p>
+          </div>
         </div>
 
-    </div>
+        <!-- Envíos seguros -->
+        <div class="main__beneficio">
+          <span class="main__beneficio-icono">⬡</span>
 
-    <!-- Envíos seguros -->
-    <div class="main__beneficio">
-
-        <span class="main__beneficio-icono">⬡</span>
-
-        <div class="main__beneficio-texto">
-
+          <div class="main__beneficio-texto">
             <h3>Envíos seguros</h3>
 
-            <p>
-                Empaque cuidado para acompañar cada aventura.
-            </p>
-
+            <p>Empaque cuidado para acompañar cada aventura.</p>
+          </div>
         </div>
-
-    </div>
-
-</section>
-
-
+      </section>
     </main>
 
+    <footer class="footer">
+      <div class="footer__contenido">
+        <div class="footer__marca">
+          <img
+            src="img/5taIMG.png"
+            alt="Mascota de PLUSH.CLAUSS"
+            class="footer__mascota"
+          />
 
-  
-
-    <!-- ===== FOOTER ===== -->
-
-<footer class="footer">
-
-    <div class="footer__contenido">
-
-        <!-- Mascota de la tienda -->
-        <img src="img/5taIMG.png"
-             alt="Mascota de PLUSH.CLAUSS"
-             class="footer__mascota">
-
-        <!-- Información de la tienda -->
-        <div class="footer__informacion">
-
-            <h2 class="footer__titulo">
-                PLUSH.CLAUSS
-            </h2>
+          <div class="footer__informacion">
+            <h2 class="footer__titulo">PLUSH.CLAUSS</h2>
 
             <p class="footer__descripcion">
-                Para quienes coleccionan historias,
-                personajes y un poquito de nostalgia.
+              Para quienes coleccionan historias, personajes y un poquito de
+              nostalgia.
             </p>
 
-            <p class="footer__ubicacion">
-                La Paz, Bolivia
-            </p>
-
+            <p class="footer__ubicacion">La Paz, Bolivia</p>
+          </div>
         </div>
 
-    </div>
+        <div class="footer__columna">
+          <h3 class="footer__subtitulo">EXPLORA</h3>
 
-</footer>
+          <a href="#inicio" class="footer__enlace">Inicio</a>
 
-</body>
+          <a href="#coleccion" class="footer__enlace">Videojuegos</a>
 
+          <a href="#coleccion" class="footer__enlace">Series</a>
+
+          <a href="#coleccion" class="footer__enlace">Películas</a>
+        </div>
+
+        <div class="footer__columna">
+          <h3 class="footer__subtitulo">HABLEMOS</h3>
+
+          <p class="footer__dato">correo@ejemplo.com</p>
+
+          <p class="footer__dato">WhatsApp: +591 70000000</p>
+
+          <p class="footer__dato">Lunes a viernes · 9:00 a 18:00</p>
+        </div>
+
+        <!-- ===== REDES SOCIALES ===== -->
+
+        <div class="footer__columna">
+          <h3 class="footer__subtitulo">SIGUE EL UNIVERSO</h3>
+
+          <div class="footer__redes">
+            <!-- Instagram -->
+            <span class="footer__red-icono" aria-label="Instagram">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+
+                <circle cx="12" cy="12" r="4" />
+
+                <circle cx="17.5" cy="6.5" r="1" />
+              </svg>
+            </span>
+
+            <!-- Facebook -->
+            <span class="footer__red-icono" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M14 21v-8h3l.5-4H14V7
+                         c0-1.1.4-1.5 1.6-1.5H18V2.2
+                         c-.4-.1-1.6-.2-2.8-.2
+                         C12.3 2 10.5 3.7 10.5 6.8V9H8v4h2.5v8z"
+                />
+              </svg>
+            </span>
+          </div>
+
+          <p class="footer__dato">@plush.clauss</p>
+        </div>
+      </div>
+
+      <div class="footer__inferior">
+        <p class="footer__derechos">
+          © 2026 PLUSH.CLAUSS. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
